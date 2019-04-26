@@ -1,4 +1,5 @@
 class StaticPagesController < ApplicationController
+  
   def basics
   end
 
@@ -7,4 +8,5 @@ class StaticPagesController < ApplicationController
 
   def git
   end
+  
 end
