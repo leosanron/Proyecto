@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+    
+  root'static_pages#basics'
+  
   get 'static_pages/basics'
 
   get 'static_pages/ruby'
