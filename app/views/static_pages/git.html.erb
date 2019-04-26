@@ -4,3 +4,9 @@ y sobre <a href="https://4c0adb4edcfb49758a04734df2af4f66.vfs.cloud9.us-east-2.a
 <p> Para instalar un nuevo repositorio de git nuevo se debe correr $ git init, se aconseja primero configurar la informacion corriendo $ git config --global user.name "tu nombre" y $ git config --global user.email your.email@example.com con los respectivos datos</p>
 <P> Para crear un nuevo branch, se corre $ git checkout -b "nombre ", lo cual crea y ubica en el nuevo brach</P>
 <P>Para realizar un commit incluyendo todos los cambios actuale, se debe correr $ git add -A, luego,  git commit -m "nombre del commit" </P>
+<p> Para enviar el codigo al repositorio remoto se debe corre, git push -u origin "nombre" o simplemente, $ git push </p>
+<P> Para Configurar el origen del repositorio remoto para evitar escribirlosiempre cada vez que se hace un push o un pull, se corre, git checkout master, lo cual nos devuelve al repositorio master o en el que queramos trabajar </P>
+<p> Git revert crea una nueva commit que deshace los cambios de una commit anterior. Este comando agrega un nuevo historial al proyecto (no modifica el historial existente), Mientras que, git reset cambia lo que el commit que sera agregado agregado a la rama principal y puede cambiar el historiar al cambiar el commitactual</p>
+<P> Junto con otros comandos $git checkout tiene otras funciones, por ejemplo: corriendo git checkout -f.. para forzar sobrescribir los cambios actuales y  deshacer los cambios actuales; $git checkout -b "nombre".. crea una nueva rama y se ubica en ella; $git branch -d "nombre".. borra la rama despues de haberla unido al master ; $ git branch -D.. bora la rama asi no se haya unido al master </P>
+<P> Para revisra todos los cambios que hemos hecho, corremos $git log</P>
+<p> ¿¿¿¿No estoy seguro pero para gardar dos datos deberia guardar cada uno en con git add y luego los dos con git commit???????????</p>
