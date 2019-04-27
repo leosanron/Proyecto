@@ -3,33 +3,31 @@ require 'test_helper'
 class StaticPagesControllerTest < ActionDispatch::IntegrationTest
 
   def setup
-    @base_title = "Ruby on Rails Tutorial Sample App"
+    @base_title = "Exam one"
   end
   
   test "should get basics" do
-    get static_pages_basics_url
+    get root_path
     assert_response :success
     assert_select "title", "Basic | #{@base_title}"
   end
 
   test "should get ruby" do
-    get static_pages_ruby_url
+    get ruby_path
     assert_response :success
-    assert_select "title", "Ruby |#{@base_title}"
+    assert_select "title", "Ruby | #{@base_title}"
   end
 
   test "should get git" do
-    get static_pages_git_url
+     get git_path
     assert_response :success
     assert_select "title", "Git | #{@base_title}"
   end
   test "should get central" do
-    get static_pages_central_url
+     get central_path
     assert_response :success
     assert_select "title", "Central | #{@base_title}"
   end
-  
-  
-  
+
 
 end
