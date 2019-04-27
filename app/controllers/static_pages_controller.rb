@@ -9,4 +9,7 @@ class StaticPagesController < ApplicationController
   def git
   end
   
+  def central
+  end 
+  
 end

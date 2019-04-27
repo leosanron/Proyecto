@@ -15,5 +15,12 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
     get static_pages_git_url
     assert_response :success
   end
+  test "should get central" do
+    get static_pages_central_url
+    assert_response :success
+  end
+  
+  
+  
 
 end
