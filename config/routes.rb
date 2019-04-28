@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-    
+   
+   
   root'static_pages#central'
    get  '/basics',    to: 'static_pages#basics'
    get '/ruby',  to: 'static_pages#ruby'
