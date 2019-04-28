@@ -1,7 +1,16 @@
 <% provide(:title, "Ruby") %>
 
  
-    <h1>Ruby</h1>
+ 
+<h1>Ruby</h1>
 <p> Para crear un array se dijita: @nombres = Array.new y para adicionar un elemento se dijita: @nombres = ["ivan", "luis", "pedro"] </p>
 <p> Para interpolar 2 strings en ruby se dijita: puts 'Me gusta' + ' Ruby' </p>
 <p> Para iterar con each primero se debe tener un arrelo, por ejemplo: calificacione %w[5 4 4 3 5], luego ponemos calificaciones.each do |calificacione|/ puts "nota = #{calificaciones}"/ end (para que itere y coja cada valor del arreglo) </p> 
+<p>Para declarar un Hash se debe correr: nombredelhas= {}. Lo cual genera un Hash vacio</p>
+<p> Para iterar un Hash usando .each  se debe correr: >>nombredelhash.each do |key, value| y por ejemplo para imprimir todos los valores del Hash se corre puts ?>"Key #{key.inspect} has value #{value.inspect}" y luego end</p>
+<p> Blok es una forma de agrupar instrucciones por Ejemplo, si corro >> (1..3).each { |variable| puts 2 * variable } el sistema va imprimir el resultado de la multiplicacion entre 2 y cada uno de los numeros de la variable, en este caso 1, 2 y 3. Como resultado se imprime: 2, 4, 6.</p>
+<p> La convención en Ruby para nombrar una variable es  a = clasedelavariable.new("valordelavariable") </p>
+<P> En Ruby se pueden usar los diferentes accesos para comunicar su intención a alguien que lee su código y facilitar la escritura de clases, estos son:</P>
+<p>class Person attr_reader :age ... end se traduce en def age @age end. Es decir que solo se puede ver la edad</p>
+<p>class Person attr_writer :age ... end se traduce en  def age=(value) @age = value end . Es decir que puedes escrbir la edad</p>
+<p>class Person attr_accessor :age ... end se traduce en def age=(value) @age = value end def age @age end. Es decir que se puede escribir y ver la edad </p>

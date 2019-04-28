@@ -7,7 +7,7 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
   end
   
   test "should get basics" do
-    get root_path
+    get basics_path
     assert_response :success
     assert_select "title", "Basic | #{@base_title}"
   end

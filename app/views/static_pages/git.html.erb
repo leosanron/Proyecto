@@ -10,5 +10,4 @@
 <p> Git revert crea una nueva commit que deshace los cambios de una commit anterior. Este comando agrega un nuevo historial al proyecto (no modifica el historial existente), Mientras que, git reset cambia lo que el commit que sera agregado agregado a la rama principal y puede cambiar el historiar al cambiar el commitactual</p>
 <P> Junto con otros comandos $git checkout tiene otras funciones, por ejemplo: corriendo git checkout -f.. para forzar sobrescribir los cambios actuales y  deshacer los cambios actuales; $git checkout -b "nombre".. crea una nueva rama y se ubica en ella; $git branch -d "nombre".. borra la rama despues de haberla unido al master ; $ git branch -D.. bora la rama asi no se haya unido al master </P>
 <P> Para revisra todos los cambios que hemos hecho, corremos $git log</P>
-<p> Cuando he modificado dos archivos diferentes y quiero hacer un commit por cad uno de ellos, debo corre $git add <nombre del archivo modificado> de esta manera solo </p>
-    
+<p> Cuando he modificado dos archivos diferentes y quiero hacer un commit por cad uno de ellos, debo corre $git add "nombre del archivo modificado" (sin las comillas) de esta manera solo se guardara lo modificado en el archivo nombrado. Luego se debe hacer el commit. Luego se repite el proceso con el nombre del otro archivo </p>
